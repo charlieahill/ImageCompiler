@@ -1,0 +1,23 @@
+﻿<Window x:Class="ImageCompiler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageCompiler"
+        mc:Ignorable="d"
+        Title="ImageCompiler" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="ImageDisplay"/>
+
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="P" Margin="5" Padding="5" x:Name="ButtonPrevious" Click="ButtonPrevious_Click" Grid.Column="0"/>
+            <TextBlock x:Name="ImageNumberTextBlock" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1"/>
+            <Button Content="N" Margin="5" Padding="5" x:Name="ButtonNext" Click="ButtonNext_Click" Grid.Column="2"/>
+        </Grid>
+    </Grid>
+</Window>
